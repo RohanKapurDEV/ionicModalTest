@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>main</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-input [(ngModel)]="data" clearInput></ion-input>
+  </ion-item>
+
+
+  <ion-button expand="full" [routerLink]="[ '/second', data ]">Pass data to page 2</ion-button>
+  <ion-button expand="full" (click)="openModal()">Pass data Modal</ion-button>
+  <ion-button expand="full" (click)="openPopover($event)">Pass data popover</ion-button>
+  
+  <div style="height: 2.5em;"></div>
+  <div> For the brave souls actually running this thing on their computer, open viewport size to that of a mobile device for a better experience. This is meant to be run as a webview</div>
+</ion-content>

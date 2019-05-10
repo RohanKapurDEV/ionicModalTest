@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" (click)="closeModal()"></ion-back-button>
+    </ion-buttons>
+    <ion-title>modal1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div> The id is {{ data }} </div>
+  <div style="height: 3em;"></div>
+  <div *ngFor="let address of array">
+    <ion-item>
+      <ion-label>
+        {{address}}
+      </ion-label>
+    </ion-item>
+  </div>
+</ion-content>

@@ -1,0 +1,11 @@
+<ion-list>
+  <ion-item button *ngFor="let address of addresses">
+    <ion-label>
+      {{address}}
+    </ion-label>
+  </ion-item>
+
+  <ion-item color="tertiary" (click)="closePopover()">
+    Close
+  </ion-item>
+</ion-list>
